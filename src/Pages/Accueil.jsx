@@ -13,6 +13,7 @@ const Accueil = () => {
 
   return (
     <div className="accueil-container">
+      <p>Add background</p>
       <video ref={ref} width="750" autoPlay muted loop >
         <source src={Video} type="video/mp4" />
       </video>
