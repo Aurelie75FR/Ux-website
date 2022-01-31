@@ -5,6 +5,8 @@ import Question from "./Pages/Question";
 import ReponseVocal from "./Pages/ReponseVocal";
 import ReponseEcrit from "./Pages/ReponseEcrit";
 import Remerciement from "./Pages/Remerciement";
+import "./Styles/Global.css"
+
 
 function App() {
   return (
