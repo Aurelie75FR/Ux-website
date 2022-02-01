@@ -1,3 +1,9 @@
+/*
+Résolution tablette 
+L = 1620  
+l = 2160
+*/
+
 *,
 ::before {
     box-sizing: border-box;
@@ -5,4 +11,5 @@
     padding: 0;
     text-align: center;
 }
+
 

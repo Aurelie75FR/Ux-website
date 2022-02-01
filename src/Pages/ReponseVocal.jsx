@@ -1,8 +1,14 @@
-import React, {useState} from 'react';
-import { Link } from 'react-router-dom';
+import React, {useEffect} from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 // import Countdown from './../Components/Countdown';
 
 function ReponseVocal() {
+  const navigate = useNavigate();
+  useEffect(() => {
+    setTimeout(() => {
+      navigate("/");
+    }, 30000); //3 minutes
+  }, []);
   // const [isPlaying, setIsPlaying] = useState(false);
   // const handler = () => {
   //   setIsPlaying(true)
