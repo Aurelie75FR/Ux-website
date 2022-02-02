@@ -1,5 +1,6 @@
 import React,{useEffect} from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import send from "../Assets/send.png"
 
 function ReponseEcrit() {
   const navigate = useNavigate();
@@ -9,9 +10,20 @@ function ReponseEcrit() {
     }, 180000); //3 minutes
   }, []);
   return <>
-  <h1>Votre optinion compte</h1>
-      <textarea name="reponse" id="reponse" cols="30" rows="10"></textarea>
-      <Link to="/remerciement">Envoyer</Link>
+  <div className="content-question">
+      <h1 className="question">
+        ET TOI, QU’EST CE QUI <br />
+        TE REND ORIGINAL.E ?
+      </h1>
+      <h1 className="question">
+        AND YOU, WHAT <br />
+        MAKES YOU ORIGINAL ?
+      </h1>
+    </div>
+    <div className="reponse-ecrite">
+      <textarea className='textArea' cols="30" rows="10"></textarea>
+      <Link className='envoyer' to="/remerciement">Send/Envoyer<img src={send} alt="envoyer" /></Link>
+    </div>
   </>;
 }
 

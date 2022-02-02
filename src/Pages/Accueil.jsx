@@ -14,17 +14,21 @@ const Accueil = () => {
 
   return (
     <div className="accueil-container">
-      <Link className="overlayLink" to='/question'>
-      <video className="video" id="video" autoPlay muted loop>
-        <source src={Video} type="video/mp4" />
-      </video>
+      <Link className="overlayLink" to="/question">
+        <video className="video" id="video" autoPlay muted loop>
+          <source src={Video} type="video/mp4" />
+        </video>
 
-      <p className="touchscreen">
-        Touche l'écran pour nous partager ce qui te rends original·e
-        <br></br>
-        <br></br>
-        Touch the screen to share your originality
-      </p>
+        <p className="touchscreen">
+          Touche l'écran pour <br />
+          nous partager <br />
+          ce qui te rends original.e
+          <br />
+          <br />
+          Touch the screen <br />
+          to share your originality.
+        </p>
+        <div className="touch"></div>
       </Link>
     </div>
   );
