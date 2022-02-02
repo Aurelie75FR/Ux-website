@@ -14,6 +14,7 @@ const Accueil = () => {
 
   return (
     <div className="accueil-container">
+      <Link className="overlayLink" to='/question'>
       <video className="video" id="video" autoPlay muted loop>
         <source src={Video} type="video/mp4" />
       </video>
@@ -24,8 +25,7 @@ const Accueil = () => {
         <br></br>
         Touch the screen to share your originality
       </p>
-
-      {/* <Link to='/question'>to question page</Link> */}
+      </Link>
     </div>
   );
 };

@@ -4,45 +4,52 @@ L = 1620
 l = 2160
 */
 @font-face {
-  font-family: "font";
-  src: local("font"), url(./../Assets/Font/font.otf) format("opentype");
+    font-family: "font";
+    src: local("font"), url(./../Assets/Font/font.otf) format("opentype");
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "font";
-  font-size: 16px;
-  color: whitesmoke;
-  overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: "font";
+    font-size: 16px;
+    color: whitesmoke;
+    background:#d3898a;
+    overflow-x: hidden;
 }
 
 *,
 ::before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 #video {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
 }
 
 .touchscreen {
-  position: absolute;
-  z-index: 2;
-  color: whitesmoke;
-  font-size: 4em;
-  width: 24%;
-  top: 75%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 2;
+    color: whitesmoke;
+    font-size: 4em;
+    width: 24%;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlayLink {
+    background: transparent;
+    width: 100%;
+    height: 100%;
 }
 
 /* body{
