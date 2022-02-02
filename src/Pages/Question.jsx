@@ -6,7 +6,7 @@ function Question() {
   useEffect(() => {
     setTimeout(() => {
       navigate("/");
-    }, 30000); //3 minutes
+    }, 180000); //3 minutes
   }, []);
   return (
     <div className="question-container">

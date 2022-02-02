@@ -7,7 +7,7 @@ function ReponseVocal() {
   useEffect(() => {
     setTimeout(() => {
       navigate("/");
-    }, 30000); //3 minutes
+    }, 180000); //3 minutes
   }, []);
   // const [isPlaying, setIsPlaying] = useState(false);
   // const handler = () => {

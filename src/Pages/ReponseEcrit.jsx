@@ -6,7 +6,7 @@ function ReponseEcrit() {
   useEffect(() => {
     setTimeout(() => {
       navigate("/");
-    }, 30000); //3 minutes
+    }, 180000); //3 minutes
   }, []);
   return <>
   <h1>Votre optinion compte</h1>
