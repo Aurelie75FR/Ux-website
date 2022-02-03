@@ -2,12 +2,13 @@ import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 function Remerciement() {
-  const navigate2 = useNavigate();
+  const navigate3 = useNavigate();
   useEffect(() => {
     setTimeout(() => {
-      navigate2("/");
+      navigate3("/");
     }, 4000); // 4 secondes
-  }, [navigate2]);
+  }, [navigate3]);
+  console.log(navigate3)
 
   return (
     <>

@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Accueil from "./Pages/Accueil";
-import Question from "./Pages/Question";
+import Original from "./Pages/Original";
 import ReponseVocal from "./Pages/ReponseVocal";
 import ReponseEcrit from "./Pages/ReponseEcrit";
 import Remerciement from "./Pages/Remerciement";
@@ -13,7 +13,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Accueil/>} />
-        <Route path="/question" element={<Question/>} />
+        <Route path="/original" element={<Original/>} />
         <Route path="/reponseVocal" element={<ReponseVocal/>} />
         <Route path="/reponseEcrit" element={<ReponseEcrit/>} />
         <Route path="/remerciement" element={<Remerciement/>} />

@@ -1,20 +1,12 @@
 import React from "react";
 import Video from "./../Assets/Video.mp4";
 import { Link } from "react-router-dom";
-import Button from "./../Components/Button";
 
 const Accueil = () => {
-  //pas sûr de l'utiliser
-  // const ref = useRef();
-
-  // useEffect(() => {});
-
-  //la balise <video>
-  //https://developer.mozilla.org/fr/docs/Web/HTML/Element/video
 
   return (
     <div className="accueil-container">
-      <Link className="overlayLink" to="/question">
+      <Link className="overlayLink" to="/original">
         <video className="video" id="video" autoPlay muted loop>
           <source src={Video} type="video/mp4" />
         </video>

@@ -11,6 +11,7 @@ function Question() {
       navigate("/");
     }, 180000); //3 minutes
   }, [navigate]);
+  console.log(navigate)
   return (
     <div>
       <div className="content">
@@ -47,7 +48,7 @@ function Question() {
         </div>
         <div className="touch">
         <Link to="/reponseEcrit">
-          <img src={Keys} alt="clavier" />
+          <img src={Keys} className ="clavier" alt="clavier" />
         </Link>
         </div>
       </div>

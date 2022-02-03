@@ -3,12 +3,13 @@ import { Link, useNavigate } from 'react-router-dom';
 
 
 function ReponseEcrit() {
-  const navigate = useNavigate();
+  const navigate1 = useNavigate();
   useEffect(() => {
     setTimeout(() => {
-      navigate("/");
+      navigate1("/");
     }, 180000); //3 minutes
-  }, [navigate]);
+  }, [navigate1]);
+  console.log(navigate1)
   return <>
   <div className="content-question">
       <h1 className="question">
