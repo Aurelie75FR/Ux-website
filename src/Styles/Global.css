@@ -83,7 +83,7 @@ body {
 /* Page 2 */
 
 .content {
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 .head {
@@ -101,7 +101,11 @@ body {
     justify-content: center;
     align-items: flex-end;
     /* margin-top: 80px; */
-    margin: 80px 0;
+    /* margin: 80px 0; */
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding-bottom: 80px;
+    
 }
 
 .clavier {
@@ -125,17 +129,18 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 250px 0;
+    margin: 50px 0;
+    padding-top: 20px;
     text-align: center;
 }
 
-.micro {
+/* .micro {
     position: absolute;
     top: 63%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 70px;
-}
+} */
 
 
 /* Page 3 bis Text */
@@ -145,7 +150,13 @@ body {
     flex-direction: column;
     justify-content: center;
     margin: 3rem 0;
+    
 
+}
+
+.reponse-vocale {
+    display: flex;
+    flex-direction: column;
 }
 
 .textArea {
@@ -160,6 +171,10 @@ body {
     color: whitesmoke;
     font-size: 4.5rem;
     outline: none;
+}
+
+.displayInput {
+    display: flex;
 }
 
 
@@ -195,3 +210,4 @@ body {
     transform: translate(-50%, -50%);
     font-size: 4.5rem;
 }
+

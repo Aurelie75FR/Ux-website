@@ -10,7 +10,7 @@ function Question() {
       navigate("/");
     }, 180000); //3 minutes
   }, [navigate]);
-  console.log(navigate)
+  console.log(navigate);
   return (
     <div>
       <div className="content">
@@ -40,16 +40,18 @@ function Question() {
         </p>
       </div>
       <div className="buttons">
-        <div className="touch">
-        <Link to="/reponseVocal">
+        <Link to="/reponses">
+          <div className="touch">
+            {/* <Link to="/reponseVocal">
           <img src={Mic} alt="micro" />
         </Link>
         </div>
         <div className="touch">
         <Link to="/reponseEcrit">
           <img src={Keys} className ="clavier" alt="clavier" />
+        </Link> */}
+          </div>
         </Link>
-        </div>
       </div>
     </div>
   );

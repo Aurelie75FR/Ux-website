@@ -8,7 +8,7 @@
   right: 0;
   margin: 0 auto;
   top: 70%;
-  margin-top: -60px;
+  margin-top: -30px;
 }
 
 .button {
@@ -38,4 +38,6 @@
 
 .touchtotalk {
   font-size: 4.5rem;
+  margin-top: 25%
+
 }
