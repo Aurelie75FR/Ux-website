@@ -1,2 +1,0 @@
-# ux-website
-template website

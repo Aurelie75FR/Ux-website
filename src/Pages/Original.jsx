@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import "../Styles/Global.css";
 import Keys from "../Assets/Keys.svg";
 import Mic from "../Assets/Mic.svg";
 

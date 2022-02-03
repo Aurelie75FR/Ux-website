@@ -15,11 +15,6 @@ function ReponseVocal() {
     navigate2("/remerciement");
   };
   
-
-  //peut-être ajouter une animation pendant le record
-  // ou un timer ¯\_(ツ)_/¯
-  // si isActive = next page
-  // else !isActive = setTimeOut navigate = 3min
   useEffect(() => {
     setTimeout(() => {
       navigate2("/");
