@@ -134,12 +134,23 @@ body {
 }
 
 .textArea {
+    /* gerer le ::placeholder du textarea */
     margin: 0 14rem;
     height: 300px;
     resize: none;
-    background: rgba(94, 57, 57, 0.1);
+    background: rgba(129, 58, 58, 0.1);
     border: none;
+    overflow: auto;
+    font-family: 'font';
+    color:whitesmoke;
+    font-size: 4.5rem;
 }
+
+
+/* textarea::placeholder{
+    font-size: 4.5rem;
+    color: whitesmoke
+} */
 
 .envoyer {
     margin: 3rem 38rem 0;
