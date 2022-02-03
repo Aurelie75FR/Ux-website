@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+// import Mic from "../Assets/Mic.svg";
 import "./../Styles/Vocal.css";
 
 function ReponseVocal() {
@@ -22,8 +23,8 @@ function ReponseVocal() {
     setTimeout(() => {
       navigate("/");
     }, 180000);
-    //3 minutes
   }, [navigate]);
+   //3 minutes setTimeOut homepage
 
   return (
     <>
@@ -38,6 +39,7 @@ function ReponseVocal() {
         </h1>
       </div>
       <div className="recordOrNext">
+      {/* <img src={Mic} id="microAnswer" alt="micro" /> */}
         <div className="socket">
           <div
             className={isActive ? "button" : "button active"}
