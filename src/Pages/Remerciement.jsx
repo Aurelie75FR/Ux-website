@@ -9,8 +9,9 @@ function Remerciement() {
   useEffect(() => {
     setTimeout(() => {
       navigate("/");
-    }, 4000); // 4000 4 secondes 
-  }, []);
+    }, 6000); // 6 secondes 
+  }, [navigate]);
+
   return (
     <>
     <div className="content-thanks">

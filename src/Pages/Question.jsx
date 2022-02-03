@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../Styles/Global.css";
-import keyboard from "../Assets/keyboard.png";
-import mic from "../Assets/mic.png";
+import Keys from "../Assets/Keys.svg";
+import Mic from "../Assets/Mic.svg";
 
 function Question() {
   const navigate = useNavigate();
@@ -10,7 +10,7 @@ function Question() {
     setTimeout(() => {
       navigate("/");
     }, 180000); //3 minutes
-  }, []);
+  }, [navigate]);
   return (
     <div>
       <div className="content">
@@ -42,12 +42,12 @@ function Question() {
       <div className="buttons">
         <div className="touch">
         <Link to="/reponseVocal">
-          <img src={mic} alt="micro" />
+          <img src={Mic} alt="micro" />
         </Link>
         </div>
         <div className="touch">
         <Link to="/reponseEcrit">
-          <img src={keyboard} alt="clavier" />
+          <img src={Keys} alt="clavier" />
         </Link>
         </div>
       </div>

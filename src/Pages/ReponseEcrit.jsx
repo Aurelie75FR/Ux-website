@@ -1,6 +1,6 @@
 import React,{useEffect} from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import send from "../Assets/send.png"
+
 
 function ReponseEcrit() {
   const navigate = useNavigate();
@@ -8,7 +8,7 @@ function ReponseEcrit() {
     setTimeout(() => {
       navigate("/");
     }, 180000); //3 minutes
-  }, []);
+  }, [navigate]);
   return <>
   <div className="content-question">
       <h1 className="question">
@@ -22,7 +22,7 @@ function ReponseEcrit() {
     </div>
     <div className="reponse-ecrite">
       <textarea className='textArea' cols="30" rows="10"></textarea>
-      <Link className='envoyer' to="/remerciement">Send/Envoyer<img src={send} alt="envoyer" /></Link>
+      <Link className='envoyer' to="/remerciement">Send/Envoyer</Link>
     </div>
   </>;
 }
