@@ -4,9 +4,11 @@ import { useNavigate } from "react-router-dom";
 function Remerciement() {
   const navigate3 = useNavigate();
   useEffect(() => {
-    setTimeout(() => {
+    const timeOut3 = setTimeout(() => {
       navigate3("/");
-    }, 4000); // 4 secondes
+    }, 4000);
+    console.log(timeOut3); // 4 secondes
+    return () => clearTimeout(timeOut3, "remerciement timed out");
   }, [navigate3]);
   console.log(navigate3)
 

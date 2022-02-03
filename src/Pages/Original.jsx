@@ -6,9 +6,11 @@ import Mic from "../Assets/Mic.svg";
 function Question() {
   const navigate = useNavigate();
   useEffect(() => {
-    setTimeout(() => {
+    const timeOut = setTimeout(() => {
       navigate("/");
-    }, 180000); //3 minutes
+    }, 180000);
+    console.log(timeOut, "timed Out in originial");
+    return () => clearTimeout(timeOut); //3 minutes
   }, [navigate]);
   console.log(navigate);
   return (

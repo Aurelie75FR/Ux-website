@@ -27,12 +27,14 @@ function Reponses() {
   };
 
   useEffect(() => {
-    setTimeout(() => {
+    const timeOut2 = setTimeout(() => {
       navigateReponses("/");
     }, 180000);
-    return clearTimeout() //3 minutes
+    console.log(timeOut2, "reponses timed out");
+    return () => clearTimeout(timeOut2) //3 minutes
   }, [navigateReponses]);
   console.log(navigateReponses);
+  
 
   return (
     <>
