@@ -122,9 +122,19 @@ body {
 
 .recordOrNext {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 250px 0;
+    text-align: center;
+}
+
+.micro {
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
 }
 
 

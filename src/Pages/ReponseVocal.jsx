@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-// import Mic from "../Assets/Mic.svg";
+import Mic from "../Assets/Mic.svg";
 import "./../Styles/Vocal.css";
 
 function ReponseVocal() {
@@ -14,14 +14,14 @@ function ReponseVocal() {
   const handleClick = () => {
     navigate2("/remerciement");
   };
-  
+
   useEffect(() => {
     setTimeout(() => {
       navigate2("/");
     }, 180000);
   }, [navigate2]);
-  console.log(navigate2)
-   //3 minutes setTimeOut homepage
+  console.log(navigate2);
+  //3 minutes setTimeOut homepage
 
   return (
     <>
@@ -35,6 +35,7 @@ function ReponseVocal() {
           MAKES YOU ORIGINAL ?
         </h1>
       </div>
+        <img className="micro" src={Mic} alt="Micro" />
       <div className="recordOrNext">
         <div className="socket">
           <div
