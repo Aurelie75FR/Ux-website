@@ -19,6 +19,9 @@ function ReponseVocal() {
     setTimeout(() => {
       navigate2("/");
     }, 180000);
+    return () => {
+      clearTimeout(navigate2);
+    }
   }, [navigate2]);
   console.log(navigate2);
   //3 minutes setTimeOut homepage

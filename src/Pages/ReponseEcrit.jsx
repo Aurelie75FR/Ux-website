@@ -8,6 +8,9 @@ function ReponseEcrit() {
     setTimeout(() => {
       navigate1("/");
     }, 180000); //3 minutes
+    return () => {
+      clearTimeout(navigate1)
+    }
   }, [navigate1]);
   console.log(navigate1)
   return <>

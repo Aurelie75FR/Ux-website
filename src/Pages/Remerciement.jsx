@@ -7,6 +7,9 @@ function Remerciement() {
     setTimeout(() => {
       navigate3("/");
     }, 4000); // 4 secondes
+    return () => {
+      clearTimeout(navigate3);
+    }
   }, [navigate3]);
   console.log(navigate3)
 
