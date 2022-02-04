@@ -22,7 +22,7 @@ function ReponseEcrit() {
       </h1>
     </div>
     <div className="reponse-ecrite">
-      <textarea className='textArea' cols="30" rows="10"></textarea>
+      <textarea className='textArea' cols="30" rows="10" autoComplete='off'></textarea>
       <Link className='envoyer' to="/remerciement">Send/Envoyer</Link>
     </div>
   </>;
