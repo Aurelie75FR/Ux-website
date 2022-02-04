@@ -6,14 +6,14 @@ import Mic from "../Assets/Mic.svg";
 function Question() {
   const navigate = useNavigate();
   useEffect(() => {
-    setTimeout(() => {
+    const originalTimeOut = setTimeout(() => {
       navigate("/");
     }, 180000); //3 minutes
     return () => {
-      clearTimeout(navigate)
-    }
+      clearTimeout(originalTimeOut);
+    };
   }, [navigate]);
-  console.log(navigate)
+  console.log(navigate);
   return (
     <div>
       <div className="content">
@@ -44,14 +44,14 @@ function Question() {
       </div>
       <div className="buttons">
         <div className="touch">
-        <Link to="/reponseVocal">
-          <img src={Mic} alt="micro" />
-        </Link>
+          <Link to="/reponseVocal">
+            <img src={Mic} alt="micro" />
+          </Link>
         </div>
         <div className="touch">
-        <Link to="/reponseEcrit">
-          <img src={Keys} className ="clavier" alt="clavier" />
-        </Link>
+          <Link to="/reponseEcrit">
+            <img src={Keys} className="clavier" alt="clavier" />
+          </Link>
         </div>
       </div>
     </div>

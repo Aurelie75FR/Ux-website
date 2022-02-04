@@ -16,12 +16,12 @@ function ReponseVocal() {
   };
 
   useEffect(() => {
-    setTimeout(() => {
+    const vocalTimeOut = setTimeout(() => {
       navigate2("/");
     }, 180000);
     return () => {
-      clearTimeout(navigate2);
-    }
+      clearTimeout(vocalTimeOut);
+    };
   }, [navigate2]);
   console.log(navigate2);
   //3 minutes setTimeOut homepage
@@ -38,7 +38,7 @@ function ReponseVocal() {
           MAKES YOU ORIGINAL ?
         </h1>
       </div>
-        <img className="micro" src={Mic} alt="Micro" />
+      <img className="micro" src={Mic} alt="Micro" />
       <div className="recordOrNext">
         <div className="socket">
           <div
