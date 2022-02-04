@@ -9,6 +9,9 @@ function Question() {
     setTimeout(() => {
       navigate("/");
     }, 180000); //3 minutes
+    return () => {
+      clearTimeout(navigate)
+    }
   }, [navigate]);
   console.log(navigate)
   return (
