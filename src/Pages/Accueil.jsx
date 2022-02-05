@@ -4,9 +4,11 @@ import { Link } from "react-router-dom";
 
 const Accueil = () => {
 
+
+
   return (
     <div className="accueil-container">
-      <button id="goFS">Go fullscreen</button>
+      {/* <button id="goFS">Go fullscreen</button> */}
       <Link className="overlayLink" to="/original">
         <video className="video" id="video" height={1080} width={810}  autoPlay muted loop>
           <source src={Video} type="video/mp4" />
