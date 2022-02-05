@@ -62,21 +62,31 @@
       //   );
       // };
 
-      var webContainer = document.getElementById("root");
+      // var webContainer = document.getElementById("root");
 
-      function toggleFullscreen() {
-        if (webContainer.webkitEnterFullScreen) {
-          // Toggle fullscreen in Safari for iPad
-          webContainer.webkitEnterFullScreen();
-        } else if (webContainer.mozRequestFullScreen) {
-        } else if (webContainer.msRequestFullscreen) {
-          webContainer.msRequestFullscreen();
-        }
-      }
+      // function toggleFullscreen() {
+      //   if (webContainer.webkitEnterFullScreen) {
+      //     // Toggle fullscreen in Safari for iPad
+      //     webContainer.webkitEnterFullScreen();
+      //   } else if (webContainer.mozRequestFullScreen) {
+      //   } else if (webContainer.msRequestFullscreen) {
+      //     webContainer.msRequestFullscreen();
+      //   }
+      // }
 
-      document.addEventListener("dblclick", () => {
-        document.documentElement.toggleFullScreen().catch(console.log);
-      });
+      // document.addEventListener("dblclick", () => {
+      //   document.documentElement.toggleFullScreen().catch(console.log);
+      // });
+
+      var goFS = document.getElementById("goFS");
+      goFS.addEventListener(
+        "click",
+        function () {
+          console.log("clicked fullscreen");
+          document.body.requestFullscreen();
+        },
+        false
+      );
     </script>
   </body>
 </html>
