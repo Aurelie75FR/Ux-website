@@ -19,6 +19,8 @@ l = 1080
     text-align: center;
 }
 
+@media (display-mode: fullscreen) {
+
 
 @media screen and (max-width:810px),
 screen and (max-height:1080px) {
@@ -211,4 +213,4 @@ body {
     transform: translate(-50%, -50%);
     font-size: 2.25rem;
 }
-}
+}}
