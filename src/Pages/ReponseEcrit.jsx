@@ -13,7 +13,7 @@ function ReponseEcrit() {
   }, [navigate1]);
   console.log(navigate1);
   return (
-    <>
+    <div className="reponse-content">
       <div className="content-question">
         <h1 className="question">
           ET TOI, QU’EST CE QUI <br />
@@ -35,7 +35,7 @@ function ReponseEcrit() {
           Send/Envoyer
         </Link>
       </div>
-    </>
+    </div>
   );
 }
 

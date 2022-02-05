@@ -92,7 +92,7 @@ body {
 /* Page 2 */
 
 .content {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .head {
@@ -120,7 +120,7 @@ body {
 /* Page 3 Vocal */
 
 .content-question {
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 .question {
@@ -148,6 +148,13 @@ body {
 
 
 /* Page 3 bis Text */
+
+.reponse-content {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 .reponse-ecrite {
     display: flex;
