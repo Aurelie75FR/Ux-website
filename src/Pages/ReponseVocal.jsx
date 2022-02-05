@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Mic from "../Assets/Mic.svg";
+import Mic from "../Assets/Mic.png";
 import "./../Styles/Vocal.css";
 
 function ReponseVocal() {
