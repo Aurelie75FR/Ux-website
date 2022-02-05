@@ -142,7 +142,7 @@ screen and (max-height:1080px) {
 
     .micro {
         position: absolute;
-        top: 63%;
+        top: 52%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 35px;
