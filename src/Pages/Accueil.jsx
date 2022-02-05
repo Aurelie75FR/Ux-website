@@ -7,7 +7,7 @@ const Accueil = () => {
   return (
     <div className="accueil-container">
       <Link className="overlayLink" to="/original">
-        <video className="video" id="video" autoPlay muted loop>
+        <video className="video" id="video" height={1080} width={810}  autoPlay muted loop>
           <source src={Video} type="video/mp4" />
         </video>
 
