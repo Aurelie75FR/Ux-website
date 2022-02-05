@@ -21,6 +21,7 @@ const Accueil = () => {
 
   return (
     <div className="accueil-container">
+      <p>hello</p>
       {/* <button id="goFS" onClick={toggleFullScreen}>Go fullscreen</button> */}
       <Link className="overlayLink" to="/original">
         <video className="video" id="video" height={1080} width={810}  autoPlay muted loop>
