@@ -40,18 +40,31 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
     <script>
-      const getFullScreen = () => {
-        return (
-          document.fullscreenElement ||
-          document.webkitFullscreenElement ||
-          document.mozFullscreenElement ||
-          document.msFullscreenElement
-        );
-      };
+      function toggleFullScreen(el) {
+            if (!el) {
+                el = document.body; // Make the body go full screen.
+            }
+            var isInFullScreen = (document.fullScreenElement && document.fullScreenElement !== null) ||  (document.mozFullScreen || document.webkitIsFullScreen);
 
-      document.addEventListener("dblclick", () => {
-        document.documentElement.requestFullscreen().catch(console.log);
-      });
+            if (isInFullScreen) {
+                cancelFullScreen();
+            } else {
+                requestFullScreen(el);
+            }
+            return false;
+        }
+      // const getFullScreen = () => {
+      //   return (
+      //     document.fullscreenElement ||
+      //     document.webkitFullscreenElement ||
+      //     document.mozFullscreenElement ||
+      //     document.msFullscreenElement
+      //   );
+      // };
+
+      // document.addEventListener("dblclick", () => {
+      //   document.documentElement.requestFullscreen().catch(console.log);
+      // });
     </script>
   </body>
 </html>
