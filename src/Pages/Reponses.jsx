@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Mic from "../Assets/Mic.svg";
-import Keys from "../Assets/Keys.svg";
+import Mic from "../Assets/Mic.png";
+import Keys from "../Assets/Keys.png";
 import "./../Styles/Vocal.css";
 
 function Reponses() {
@@ -40,7 +40,7 @@ function Reponses() {
     <>
       <div className="content-question">
         <h1 className="question">
-          ET TOI, QU’EST CE QUI <br />
+          ET TOI, QU’EST-CE QUI <br />
           TE REND ORIGINAL.E ?
         </h1>
         <h1 className="question">

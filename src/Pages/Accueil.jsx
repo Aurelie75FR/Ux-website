@@ -14,7 +14,7 @@ const Accueil = () => {
         <p className="touchscreen">
           Touche l'écran pour <br />
           nous partager <br />
-          ce qui te rends original.e
+          ce qui te rend original.e
           <br />
           <br />
           Touch the screen <br />
