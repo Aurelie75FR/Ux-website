@@ -16,7 +16,7 @@ function ReponseEcrit() {
     <div className="reponse-content">
       <div className="content-question">
         <h1 className="question">
-          ET TOI, QU’EST CE QUI <br />
+          ET TOI, QU’EST-CE QUI <br />
           TE REND ORIGINAL.E ?
         </h1>
         <h1 className="question">
