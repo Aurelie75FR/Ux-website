@@ -140,13 +140,13 @@ screen and (max-height:1080px) {
         text-align: center;
     }
 
-    .micro {
+    /* .micro {
         position: absolute;
         top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 35px;
-    }
+    } */
 
 
     /* Page 3 bis Text */
