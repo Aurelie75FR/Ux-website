@@ -19,9 +19,6 @@ l = 1080
     text-align: center;
 }
 
-
-
-
 @media screen and (max-width:810px),
 screen and (max-height:1080px) {
 
@@ -139,19 +136,6 @@ screen and (max-height:1080px) {
         margin: 170px 0;
         text-align: center;
     }
-
-    /* .reponse-vocale{
-        margin: 17rem 15.5rem;
-    } */
-
-    /* .micro {
-        position: absolute;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 35px;
-    } */
-
 
     /* Page 3 bis Text */
 

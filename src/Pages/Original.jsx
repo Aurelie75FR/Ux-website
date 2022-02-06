@@ -41,16 +41,7 @@ function Question() {
       </div>
       <div className="buttons">
         <Link to="/reponses">
-          <div className="touch">
-            {/* <Link to="/reponseVocal">
-          <img src={Mic} alt="micro" />
-        </Link>
-        </div>
-        <div className="touch">
-        <Link to="/reponseEcrit">
-          <img src={Keys} className ="clavier" alt="clavier" />
-        </Link> */}
-          </div>
+          <div className="touch"></div>
         </Link>
       </div>
     </div>
